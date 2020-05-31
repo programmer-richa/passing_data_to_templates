@@ -1,0 +1,12 @@
+{{$page_data := .}} <!-- the curly braces means data passed to template should be accessible. '.' is the data representation -->
+<!DOCTYPE html>
+<html>
+<head>
+<title>{{$page_data.title}}</title>
+</head>
+<body>
+
+<h1>Hello {{$page_data.user}}!</h1>
+<p>This page is about {{$page_data.topic}}.</p>
+</body>
+</html>
