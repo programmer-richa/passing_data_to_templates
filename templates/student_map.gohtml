@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Using range function to parse data</title>
+</head>
+<body>
+
+    <h1>Student Details</h1>
+
+    {{range $key,$value:= .}} <!-- It contains data passed to it -->
+        <p><b>{{$key}}:</b> {{$value}}</p><!--It holds a value from the map-->
+    {{end}}<!--Presents end of range-->
+   
+</body>
+</html>

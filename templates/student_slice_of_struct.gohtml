@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Using range function to parse data</title>
+</head>
+<body>
+    {{range $key,$value := .}}
+        
+        <h1>Student{{($key)}} Details</h1>
+        <p><b>Name:</b> {{.Name}}</p><!--It holds a value from the struct-->
+        <p><b>Qualification:</b> {{$value.Qualification}}</p><!--It holds a value from the struct-->
+        <p><b>Grade:</b> {{$value.Grade}}</p><!--It holds a value from the struct-->
+    {{end}}
+   
+</body>
+</html>

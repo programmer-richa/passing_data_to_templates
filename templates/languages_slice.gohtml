@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Using range function to parse data</title>
+</head>
+<body>
+
+    <h1>The following is the list of languages:</h1>
+    <ol>
+        {{$languages:= .}} <!-- It contains data passed to it -->
+        <li>{{$languages}}</li><!--It holds a value from the slice-->
+       
+    </ol>
+
+    <ol>
+        {{range .}} <!-- It contains data passed to it -->
+        <li>{{.}}</li><!--It holds a value from the slice-->
+        {{end}}<!--Presents end of range-->
+    </ol>
+</body>
+</html>
